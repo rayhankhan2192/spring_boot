@@ -15,9 +15,12 @@ public class DependencyInjectionApplication {
 
 		Employee employee = (Employee) context.getBean("employee1");//here used xml xml xml based configuration
 
-		System.out.println(employee.getName());
-		System.out.println(employee.getId());
-		System.out.println(employee.getCompany().getBranch());
+		System.out.println("Name     : "+employee.getName());
+		System.out.println("ID       : "+employee.getId());
+		System.out.println("Salary   : "+employee.getSalary());
+		System.out.println("Country  : "+employee.getCountry());
+		System.out.println("Branch   : "+employee.getCompany().getBranch());
+		System.out.println("BranchID : "+employee.getCompany().getBranchId());
 	}
 
 }
