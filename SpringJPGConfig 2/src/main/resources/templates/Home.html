@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+</head>
+<body>
+<h1>Employee data </h1>
+
+<form action="employeeData" method="POST">
+    <h4>Enter name</h4>
+    <input type="text" name="EmpName"></input>
+    <h4>Enter ID</h4>
+    <input type="text" name="EmpID"></input>
+    <h4>Enter Salary</h4>
+    <input type="text" name="EmpSalary"></input>
+    <h4>Enter Country</h4>
+    <input type="text" name="EmpCountry"></input>
+
+    <button type="submit">Submit</button>
+</form>
+
+<hr/>
+
+<form action="findByID" method="POST">
+<h4>Enter ID</h4>
+<input type="text" name="EmpID"></input>
+<button type="submit">Search</button>
+</form>
+<hr/>
+
+<form action="deleteEmployee" method="POST">
+    <h4>Enter ID</h4>
+    <input type="text" name="EmpID"></input>
+    <button type="submit">Delete</button>
+</form>
+<hr/>
+
+<form action="updateEmployee" method="POST">
+    <h4>Enter ID</h4>
+    <input type="text" name="EmpID"></input>
+    <h4>Enter name</h4>
+    <input type="text" name="EmpName"></input>
+    <h4>Enter Salary</h4>
+    <input type="text" name="EmpSalary"></input>
+    <h4>Enter Country</h4>
+    <input type="text" name="EmpCountry"></input>
+
+    <button type="submit">Update</button>
+</form>
+
+</body>
+</html>
